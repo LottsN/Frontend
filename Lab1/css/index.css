@@ -1,0 +1,31 @@
+#link{
+    padding-right: 5px;
+    padding-left: 5px;
+    position: absolute;
+    padding: 0;
+    top: 47%;
+    left: 47%;
+    width: 87px;
+    height: 47px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+    background-color: #45a3bf;
+} 
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited {
+    color: white;
+  }
