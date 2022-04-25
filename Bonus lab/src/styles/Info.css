@@ -1,0 +1,62 @@
+.info {
+    position: absolute;
+    display: inline;
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 1.2rem;
+    z-index: 10;
+    color: whitesmoke;
+    background-color: black;
+    /* top: 0px;
+    right: 0px; */
+}
+
+.playerImage {
+    height: 30px;
+}
+
+.infoLives {
+    display: inline;
+    display: -webkit-flex;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+.header {
+    z-index: 10;
+    background: #241400;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+
+.logo {
+    width: 35px;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+}
+
+.HP, .Score {
+    z-index: 10;
+    color: white;
+    float: left;
+    margin-left: 25px;
+    font-size: 23px;
+    color: #f9a642
+}
+
+.Pause{
+    z-index: 10;
+    color: white;
+    float: left;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+.showInfo{
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+    display: inline;
+}
+

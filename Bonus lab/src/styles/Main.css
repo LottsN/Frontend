@@ -1,0 +1,206 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray;
+    width: 100%;
+    height: 100%;
+}
+
+.gameRegion {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    background-color:grey;
+    background-image:url("../Content/Game_Field_Background.png"); 
+    width: 100%;
+    height: 100%;
+} 
+
+.playerRegion {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.side-panel {
+    display: flex;
+    height: calc(100vh - 45px);
+    background-color: #044972;
+    width: 500px;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-panel {
+    position: absolute;
+    left: 197px;
+    top: 346px;
+}
+
+.buttons.shoot {
+    border-radius: 50%;
+}
+
+.buttons {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-radius: 18px;
+    border: solid 3px #f9a642;
+    background-color: #2c1800;
+    color: #f9a642;
+    font-size: 29px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.buttons:active {
+    background-color: #7b4a0f;
+}
+
+.up {
+    top: -145px;
+    background: url('../Content/Controls/ArrowUp.png') no-repeat center;
+    background-size: 100%;
+    background-color: #2c1800;
+}
+
+.down {
+    top: 145px;
+    background: url('../Content/Controls/ArrowDown.png') no-repeat center;
+    background-size: 100%;
+    background-color: #2c1800;
+}
+
+.left {
+    left: -145px;
+    background: url('../Content/Controls/ArrowLeft.png') no-repeat center;
+    background-size: 100%;
+    background-color: #2c1800;
+}
+
+.right {
+    left: 145px;
+    background: url('../Content/Controls/ArrowRight.png') no-repeat center;
+    background-size: 100%;
+    background-color: #2c1800;
+}
+
+.player {
+    position: absolute; 
+    top: 200px;
+}
+
+.playerImage {
+    height: 110px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: coral;
+    width: 20%;
+    height: 100%;
+}
+
+.playButton {
+    width: 80%;
+    margin: 1rem;
+}
+
+.alert-hidden {
+    opacity: 0;
+    transition: all 250ms linear 2s;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .side-panel {
+        display: flex;
+        height: 70px;
+        background-color: #044972;
+        width: 100%;
+        position: relative;
+        right: 0px;
+        top: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons-panel {
+        display: flex;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    .buttons {
+        display: inline;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 18px;
+        border: solid 3px #f9a642;
+        background-color: #2c1800;
+        color: #f9a642;
+        font-size: 29px;
+        cursor: pointer;
+        transition: .1s;
+    }
+
+    .buttons.shoot {
+        top: 0px;
+        border-radius: 50%;
+        font-size: 12px;
+        width: 60px;
+    }
+
+    .up {
+        position: absolute;
+        top: 0px;
+        left: -200px;
+        background: url('../Content/Controls/ArrowUp.png') no-repeat center;
+        background-size: 100%;
+        background-color: #2c1800;
+    }
+    
+    .down {
+        position: absolute;
+        top: 0px;
+        left: 200px;
+        background: url('../Content/Controls/ArrowDown.png') no-repeat center;
+        background-size: 100%;
+        background-color: #2c1800;
+    }
+    
+    .left {
+        position: absolute;
+        top: 0px;
+        left: -100px;
+        background: url('../Content/Controls/ArrowLeft.png') no-repeat center;
+        background-size: 100%;
+        background-color: #2c1800;
+    }
+    
+    .right {
+        position: absolute;
+        top: 0px;
+        top: 0px;
+        left: 100px;
+        background: url('../Content/Controls/ArrowRight.png') no-repeat center;
+        background-size: 100%;
+        background-color: #2c1800;
+    }
+  }
